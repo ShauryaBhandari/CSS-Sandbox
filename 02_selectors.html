@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>CSS Selectors</title>
+  <style>
+    /* A # sign is used when styling using IDs but a . sign is used when styling via classes */
+
+    /* Make unique names and do not include colours etc in names, for future changes */
+    body {
+      background-color: aqua;
+    }
+
+    h2 {
+      color: green;
+    }
+
+    .black-heading {
+      color: blue;
+    }
+
+    /* Multiple selectors */
+    #welcome,
+    #about {
+      border: 0cm;
+      color: blueviolet;
+    }
+
+    /* nested selectors */
+    #welcome p {
+      color: azure;
+    }
+  </style>
+</head>
+
+<body>
+  <div>
+    <h2 class="black-heading">welcome</h2>
+    <p id="welcome">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eaque, in.</p>
+  </div>
+  <div>
+    <h2>about</h2>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Esse id tempore necessitatibus fugit consectetur
+      recusandae soluta nisi dolores temporibus error!</p>
+  </div>
+
+</body>
+
+</html>
